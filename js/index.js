@@ -67,14 +67,16 @@ const navBar = document.querySelector("nav");
 
 navBar.appendChild(world);
 
-navText[0].style.color = "green";
-navText[1].style.color = "green";
-navText[2].style.color = "green";
-navText[3].style.color = "green";
-navText[4].style.color = "green";
-navText[5].style.color = "green";
-navText[6].style.color = "green";
-navText[7].style.color = "green";
+// navText[0].style.color = "green";
+// navText[1].style.color = "green";
+// navText[2].style.color = "green";
+// navText[3].style.color = "green";
+// navText[4].style.color = "green";
+// navText[5].style.color = "green";
+// navText[6].style.color = "green";
+// navText[7].style.color = "green";
+const arr = Array.from(navText);
+arr.forEach(item => (item.style.color = "green"));
 
 //cta img
 let ctaImg = document.getElementById("cta-img");
